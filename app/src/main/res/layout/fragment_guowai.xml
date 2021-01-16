@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国外疫情"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/update_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据更新至2020.12.26 19:26"
+        android:textColor="#666"
+        android:layout_marginLeft="20dp"/>
+    
+    <LinearLayout
+        android:id="@+id/nums_guoWai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/nums_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现有确诊"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22223406"
+                android:textSize="20sp"
+                android:textColor="#FC6A54"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nums_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计确诊"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80236766"
+                android:textSize="20sp"
+                android:textColor="#E56F4B"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nums_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计治愈"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56258020"
+                android:textSize="20sp"
+                android:textColor="#12AFB3"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nums_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计死亡"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22223406"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#eee"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_guowai">
+
+            <RadioGroup
+                android:id="@+id/natarize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <RadioButton
+                    android:id="@+id/tatol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="累计确诊"
+                    android:button="@null"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/bg_guowai_btn" />
+
+                <RadioButton
+                    android:id="@+id/now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="现有确诊"
+                    android:button="@null"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/bg_guowai_btn" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现有确诊病例数，排除治愈、死亡"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

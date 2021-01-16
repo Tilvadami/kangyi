@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_healthCode"
+    android:orientation="vertical"
+    android:background="#66ccff">
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#FFF"
+        android:text="健康码"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/lv_center"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_healthcode"
+        android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="2020.12.30 23:00"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="@drawable/bg_healcode_date"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/hcode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周治宏"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="510623***********x"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
