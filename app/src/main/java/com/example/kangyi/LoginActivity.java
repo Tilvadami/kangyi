@@ -49,3 +49,6 @@ public class LoginActivity extends AppCompatActivity {
         edit_Pwd = (EditText) findViewById(R.id.pwd);
     }
 }
+
+//lbwnblbwnblbwnblbwnblbwnb
+//lbwnblbwnblbwnblbwnblbwnb
